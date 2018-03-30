@@ -1,0 +1,25 @@
+{
+    "name": "sa-number-regex",
+    "version": "1.0.0",
+    "description": "Regular expression for matching South African Cellphone numbers",
+    "main": "index.js",
+    "repository": "https://github.com/tiaanduplessis/sa-number-regex.git",
+    "author": "Tiaan du Plessis",
+    "license": "MIT",
+    "scripts": {
+        "lint": "standard --fix",
+        "test": "npm run lint && jest"
+    },
+    "devDependencies": {
+        "jest": "^22.4.3",
+        "standard": "^11.0.1"
+    },
+    "keywords": [
+      "south-african",
+      "cellphone",
+      "sa-number"
+    ],
+    "standard": {
+        "env": "jest"
+    }
+}
