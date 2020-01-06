@@ -1,25 +1,25 @@
 {
-    "name": "sa-number-regex",
+    "name": "sa-company-registration-number-regex",
     "version": "1.0.0",
-    "description": "Regular expression for matching South African Cellphone numbers",
+    "description": "Regular expression for matching South African Company Registration Number",
     "main": "index.js",
-    "repository": "https://github.com/tiaanduplessis/sa-number-regex.git",
-    "author": "Tiaan du Plessis",
+    "repository": "https://github.com/tiaanduplessis/sa-company-registration-number-regex.git",
+    "author": "Tiaan du Plessis <tiaanduplessis@hotmail.com>",
     "license": "MIT",
     "scripts": {
         "lint": "standard --fix",
         "test": "npm run lint && jest"
     },
-    "devDependencies": {
-        "jest": "^22.4.3",
-        "standard": "^11.0.1"
-    },
     "keywords": [
-      "south-african",
-      "cellphone",
-      "sa-number"
+        "south-african",
+        "company",
+        "registration"
     ],
     "standard": {
         "env": "jest"
+    },
+    "dependencies": {
+        "jest": "^24.9.0",
+        "standard": "^14.3.1"
     }
 }

@@ -1,4 +1,18 @@
-const pattern = '(0|27)[78]\\d{8}'
+// 06 PUBLIC COMPANY
+// 07 PRIVATE COMPANY
+// 08 ARTICLE 21
+// 09 LIMITED BY GUARANTEE
+// 10 EXTERNAL COMPANY
+// 12 EXTERNAL COMPANY UNDER SECTION 21A
+// 21 INC
+// 22 UNLIMITED
+// 23 CLOSE CORPORATION
+// 24 PRIMARY COOPERATIVE
+// 25 SECONDARY COOPERATIVE
+// 26 TERTIARY COOPERATIVE
+// 30 STATE OWNED COMPANY(SOC LTD)
+// 31 STATUTORY BODY
+const pattern = '[0-9]{4}/[0-9]{6,7}/(06|07|08|09|10|12|21|22|23|24|25|26|30|31)'
 
 module.exports = (options = {}) => {
   return options.exact ? new RegExp(`^${pattern}$`) : new RegExp(pattern, 'g')
